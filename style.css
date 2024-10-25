@@ -1,0 +1,160 @@
+.body{
+    background: linear-gradient(45deg, #c7cafa 0%, #979bf0 30%, #7f85e8 40%, #6f75e9 60%, #3d46f1 100%, transparent), radial-gradient(blue, transparent);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+}
+button{
+    background-color: #6269ed;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow:  1px 1px 7px white;
+}
+#img{
+    animation: float 10s infinite ease-in-out;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px) rotateY(360deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.ball{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+.small{
+    background-color:white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+    
+}
+.mall{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate ;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+.call{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+.fball{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* position: relative; */
+    
+}
+.fsmall{
+    background-color:white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate;
+    animation-duration: 6s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    /* position: relative; */
+
+    
+}
+.fmall{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate ;
+    animation-duration: 7s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+.fcall{
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    animation-name: animate ;
+    animation-duration: 8s;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+    position: relative;
+    
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0) scale(1) ;
+        background-color: white;
+    }
+    10%{
+        background-color: blue ;
+    }
+    20%{
+        background-color: white;
+    }
+    30%{
+        background-color: blue;
+    }
+    40%{
+        background-color: white;
+    }
+    50%{
+        background-color: blue ;
+    }
+    60%{
+        background-color: white;
+    }
+    100%
+    {
+        transform: translateY(700px) scale(1);
+    }
+}
+
