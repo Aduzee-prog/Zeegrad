@@ -215,22 +215,18 @@
       GRADING SYSTEM</h2> 
     <input type="number" class="form-control shadow-none my-lg-3 my-2" placeholder="Enter your score" id="score" autofocus>
     <button onclick="gradechecker()" class=" my-lg-3 my-2 w-100">Check</button>
-    <div class="text-center text-white fw-bold fs-3 my-2" id="showResults">Your rasult will show here</div>
+    <div class="text-center text-white fw-bold fs-3 my-2" id="showResults">Your result will show here</div>
 </div>
-
-
-    
 </body>
 <script>
-
   function gradechecker() {
     var userScore =  Number(score.value)
-    var soundFail = new Audio("trumpet-fail-242645.mp3")
-    var soundPass = new Audio("vinyl-stop-sound-effect-241388.mp3")
-    var soundCredit = new Audio("vinyl-stop-sound-effect-241388.mp3")
-    var soundGood = new Audio("057156_01-small-group-clapping-82319.mp3")
-    var soundVgood = new Audio("057156_01-small-group-clapping-82319.mp3")
-    var soundExcellent = new Audio("applause-sound-effect-240470.mp3")
+    var soundFail = new Audio("audio/trumpet-fail-242645.mp3")
+    var soundPass = new Audio("audio/vinyl-stop-sound-effect-241388.mp3")
+    var soundCredit = new Audio("audio/vinyl-stop-sound-effect-241388.mp3")
+    var soundGood = new Audio("audio/057156_01-small-group-clapping-82319.mp3")
+    var soundVgood = new Audio("audio/057156_01-small-group-clapping-82319.mp3")
+    var soundExcellent = new Audio("audio/applause-sound-effect-240470.mp3")
 
     if(score.value == '') {
       showResults.innerHTML="Enter your score"
@@ -260,11 +256,9 @@
       soundExcellent.play()
 
    } else {
-    showResults.innerHTML="Invalid Scoure"
+    showResults.innerHTML="Invalid Score"
    } 
   
-      
-     
 }
 
 </script>
