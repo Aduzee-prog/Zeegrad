@@ -233,7 +233,7 @@
     var soundExcellent = new Audio("applause-sound-effect-240470.mp3")
 
     if(score.value == '') {
-      alert("Enter your score")
+      showResults.innerHTML="Enter your score"
     } else  if(userScore>= 0 && userScore <= 32) { 
       // showResults.innerHTML=''
       showResults.innerHTML="F - Fail 😢"
@@ -260,7 +260,7 @@
       soundExcellent.play()
 
    } else {
-    alert("Invalid Scoure")
+    showResults.innerHTML="Invalid Scoure"
    } 
   
       
