@@ -227,27 +227,29 @@
     var soundGood = new Audio("audio/057156_01-small-group-clapping-82319.mp3")
     var soundVgood = new Audio("audio/057156_01-small-group-clapping-82319.mp3")
     var soundExcellent = new Audio("audio/applause-sound-effect-240470.mp3")
+    var soundError = new Audio("audio/Wrong-Answer.mp3")
 
     if(score.value == '') {
       showResults.innerHTML="Enter your score"
-    } else  if(userScore>= 0 && userScore <= 32) { 
+      soundError.play()
+    } else  if(userScore>= 0 && userScore <= 39) { 
       // showResults.innerHTML=''
       showResults.innerHTML="F - Fail 😢"
       soundFail.play()
       
-    } else if (userScore >= 33 && userScore <= 39 ) {
+    } else if (userScore >= 40 && userScore <= 49 ) {
       showResults.innerHTML="D7 - Pass😂"
       soundPass.play()
 
-    } else  if (userScore >= 40 && userScore <= 49 ) {
+    } else  if (userScore >= 50 && userScore <= 59 ) {
       showResults.innerHTML="C5 - Credit🤷‍♂️"
       soundCredit.play()
 
-    } else if (userScore >= 50 && userScore <= 59 ) {
+    } else if (userScore >= 60 && userScore <= 69 ) {
       showResults.innerHTML="B3 - Good😘 "
       soundGood.play()
 
-    } else  if (userScore >= 60 && userScore <= 79 ) {
+    } else  if (userScore >= 70 && userScore <= 79 ) {
       showResults.innerHTML="B2 - Very good🤗"
       soundVgood.play()
 
@@ -257,6 +259,7 @@
 
    } else {
     showResults.innerHTML="Invalid Score"
+    soundError.play()
    } 
   
 }
